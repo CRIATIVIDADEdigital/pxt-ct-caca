@@ -1,0 +1,200 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="?Wc~pM;,n{l7FHv(sO_p">receivedNumber</variable>
+    <variable type="" id="Zam7X_AiDtcL+CCr_XsZ">signal</variable>
+  </variables>
+  <block type="pxt-on-start" x="20" y="20">
+    <statement name="HANDLER">
+      <block type="radio_set_group">
+        <value name="ID">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="radio_on_number" x="21" y="181">
+    <field name="HANDLER_receivedNumber" id="?Wc~pM;,n{l7FHv(sO_p" variabletype="">receivedNumber</field>
+    <statement name="HANDLER">
+      <block type="variables_set">
+        <field name="VAR" id="Zam7X_AiDtcL+CCr_XsZ" variabletype="">signal</field>
+        <value name="VALUE">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+          <block type="radio_received_packet">
+            <value name="type">
+              <shadow type="radio_packet_property">
+                <field name="note">RadioPacketProperty.SignalStrength</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if">
+            <mutation elseif="4" else="1"></mutation>
+            <value name="IF0">
+              <shadow type="logic_boolean">
+                <field name="BOOL">TRUE</field>
+              </shadow>
+              <block type="logic_compare">
+                <field name="OP">LT</field>
+                <value name="A">
+                  <shadow type="math_number">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="variables_get">
+                    <field name="VAR" id="Zam7X_AiDtcL+CCr_XsZ" variabletype="">signal</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number">
+                    <field name="NUM">-100</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="device_show_leds">
+                <field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # # # # #
+        `
+                </field>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_compare">
+                <field name="OP">LT</field>
+                <value name="A">
+                  <shadow type="math_number">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="variables_get">
+                    <field name="VAR" id="Zam7X_AiDtcL+CCr_XsZ" variabletype="">signal</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number">
+                    <field name="NUM">-90</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="device_show_leds">
+                <field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        # # # # #
+        `
+                </field>
+              </block>
+            </statement>
+            <value name="IF2">
+              <block type="logic_compare">
+                <field name="OP">LT</field>
+                <value name="A">
+                  <shadow type="math_number" id="{B^.S,Do4[:7j)DCQp^U">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="variables_get">
+                    <field name="VAR" id="Zam7X_AiDtcL+CCr_XsZ" variabletype="">signal</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number">
+                    <field name="NUM">-80</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <statement name="DO2">
+              <block type="device_show_leds">
+                <field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `
+                </field>
+              </block>
+            </statement>
+            <value name="IF3">
+              <block type="logic_compare">
+                <field name="OP">LT</field>
+                <value name="A">
+                  <shadow type="math_number" id="!6x`*rg@AB*amo268[W6">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="variables_get">
+                    <field name="VAR" id="Zam7X_AiDtcL+CCr_XsZ" variabletype="">signal</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number">
+                    <field name="NUM">-70</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <statement name="DO3">
+              <block type="device_show_leds">
+                <field name="LEDS">`
+        . . . . . 
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `
+                </field>
+              </block>
+            </statement>
+            <value name="IF4">
+              <block type="logic_compare">
+                <field name="OP">LT</field>
+                <value name="A">
+                  <shadow type="math_number" id="ZZnu{8NAjOqnUw=e!k9{">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="variables_get">
+                    <field name="VAR" id="Zam7X_AiDtcL+CCr_XsZ" variabletype="">signal</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number">
+                    <field name="NUM">-60</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <statement name="DO4">
+              <block type="device_show_leds">
+                <field name="LEDS">`
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `
+                </field>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="basic_show_icon">
+                <field name="i">IconNames.Heart</field>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

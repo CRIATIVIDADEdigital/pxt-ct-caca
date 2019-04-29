@@ -1,12 +1,48 @@
-let signal = 0;
+let signal = 0
 radio.onReceivedNumber(function (receivedNumber) {
     signal = radio.receivedPacket(RadioPacketProperty.SignalStrength)
-    if (signal < -90) {
-        basic.showIcon(IconNames.SmallDiamond)
+    if (signal < -100) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            # # # # #
+            `)
+    } else if (signal < -90) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            # # # # #
+            # # # # #
+            `)
     } else if (signal < -80) {
-        basic.showIcon(IconNames.Diamond)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+    } else if (signal < -70) {
+        basic.showLeds(`
+            . . . . .
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+    } else if (signal < -60) {
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
     } else {
-        basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.Heart)
     }
 })
 radio.setGroup(1)
