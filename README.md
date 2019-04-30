@@ -30,11 +30,7 @@ Se você tiver grupos diferentes brincando na mesma sala, cada grupo deve usar u
 
 Depois da inicialização acima, o programa monitora o sinal de rádio e verifica a sua intensidade. Quanto maior a intensidade do sinal, mais perto estamos do "tesouro".
 
-```blocks
-radio.onReceivedNumber(function (receivedNumber) {
-    intensidade = radio.receivedPacket(RadioPacketProperty.SignalStrength)
-})
-```
+![Imagem do programa com a variável intensidade](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_definir_intensidade.png)
 
 Ao pressionar o botão A do Micro:bit o texto "Mensagem A" é enviado para todos os Micro:bits configurados no ```||radio:grupo de rádio (1)||```.
 
