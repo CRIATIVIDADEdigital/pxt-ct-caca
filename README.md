@@ -5,7 +5,7 @@ Para jogar serão necessários dois Micro:bits. Um Micro:bit é usado como o tes
 
 |![Imagem com o Microbit mostrando que o tesouro está longe](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_longe.png)<br>está|
 | :---: |
-|Tesouro está longe.|
+
 
 
 ![Imagem com o Microbit mostrando que o tesouro está longe](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_perto.png) Tesouro está perto.
