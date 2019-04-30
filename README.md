@@ -6,13 +6,16 @@ Para jogar serão necessários dois Micro:bits. Um Micro:bit é usado como o tes
 |![Imagem com o Microbit mostrando que o tesouro está longe](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_longe.png) Tesouro está longe.|
 | :---: |
 
-|![Imagem com o Microbit mostrando que o tesouro está perto](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_perto.png) Tesouro está perto.|
+|![Imagem com o Microbit mostrando que o tesouro está perto](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_perto.png) Tesouro está muito próximo.|
 | :---: |
 
 |![Imagem com o Microbit mostrando que encontrou o tesouro](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_achou.png) Achou o tesouro. :)|
 | :---: |
 
-O jogo **Caça ao Tesouro** (CT) é composto por dois módulos separados. O primeiro módulo (chamado de **Caça**) é usado no Micro:bit que será usado para procurar o "tesouro". O segundo módulo (chamado de **Tesouro**) é usado em cada Micro:bit que será escondigo.
+
+O jogo **Caça ao Tesouro** (CT) é composto por dois módulos separados. O primeiro módulo (chamado de **Caça**) deve ser copiado ao Micro:bit que será usado para procurar o "tesouro". O segundo módulo (chamado de **Tesouro**) deve ser copiado em cada Micro:bit que será escondido.
+
+Neste texto descrevemos o funcionamento do módulo chamado **Caça**.
 
 ## Como funciona
 O programa começa definindo um grupo de rádio.
@@ -20,7 +23,9 @@ O programa começa definindo um grupo de rádio.
 ```blocks
 radio.setGroup(1)
 ```
-Todos os Micro:bits configurados no ```||radio:definir grupo do rádio (1)||``` vão receber o conteúdo das mensagens enviadas.
+Todos os Micro:bits que participarão do jogo **Caça ao Tesouro** devem ser configurados para que a comunicação seja feita pelo ```||radio:definir grupo do rádio (1)||```. Se você tiver grupos diferentes brincando, cada grupo pode usar um número de grupo diferente.
+
+Depois da inicialização acima, o programa monitora o sinal de rádio definido e verifica a sua intensidade. Quanto maior a intensidade do sinal, mais perto estamos do "tesouro".
 
 Ao pressionar o botão A do Micro:bit o texto "Mensagem A" é enviado para todos os Micro:bits configurados no ```||radio:grupo de rádio (1)||```.
 ```blocks
