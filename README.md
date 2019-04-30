@@ -6,10 +6,11 @@ Para jogar serão necessários dois Micro:bits. Um Micro:bit é usado como o tes
 |![Imagem com o Microbit mostrando que o tesouro está longe](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_longe.png)<br>Tesouro está longe.|
 | :---: |
 
+|![Imagem com o Microbit mostrando que o tesouro está perto](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_perto.png)<br>Tesouro está perto.|
+| :---: |
 
-
-![Imagem com o Microbit mostrando que o tesouro está longe](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_perto.png) Tesouro está perto.
-
+|![Imagem com o Microbit mostrando que encontrou o tesouro](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_achou.png)<br>Achou o tesouro. :)|
+| :---: |
 
 O jogo **Caça ao Tesouro** (CT) é composto por dois módulos separados. O primeiro módulo (chamado de **Caça**) é usado no Micro:bit que será usado para procurar o "tesouro". O segundo módulo (chamado de **Tesouro**) é usado em cada Micro:bit que será escondigo.
 
