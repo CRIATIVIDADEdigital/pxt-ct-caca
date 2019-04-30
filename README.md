@@ -32,6 +32,8 @@ Depois da inicialização acima, o programa monitora o sinal de rádio e verific
 
 ![Imagem do programa com a variável intensidade](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_definir_intensidade.png)
 
+De acordo com a intensidade do sinal acionamos os leds do Micro:bit.
+
 Ao pressionar o botão A do Micro:bit o texto "Mensagem A" é enviado para todos os Micro:bits configurados no ```||radio:grupo de rádio (1)||```.
 
 ```blocks
