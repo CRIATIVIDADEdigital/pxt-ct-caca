@@ -3,8 +3,7 @@ Este programa usa o sistema de comunicação sem fio do Micro:bit para implement
 
 Para jogar serão necessários dois Micro:bits. Um Micro:bit é usado como o tesouro a ser encontrado enquanto o segundo Micro:bit é utilizado como guia para indicar se o tesouro está longe ou perto.
 
-|![Imagem com o Microbit mostrando que o tesouro está longe](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_longe.png)
-<br>Tesouro está longe.|
+|![Imagem com o Microbit mostrando que o tesouro está longe](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-ct-caca/master/img/microbit_longe.png)<br>Tesouro está longe.|
 | :---: |
 
 
