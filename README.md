@@ -1,7 +1,9 @@
 # Caça ao Tesouro (CT) - Módulo Caça
-Este programa usa o sistema de comunicação sem fio do Micro:bit para implementar o jogo **Caça ao Tesouro**. Neste versão da **Caça ao Tesouro** você deverá encontrar o Micro:bit que está escondido.
+Este programa usa o sistema de comunicação sem fio do Micro:bit para implementar o jogo **Caça ao Tesouro**. Neste versão do **Caça ao Tesouro** você deverá encontrar o Micro:bit que está escondido.
 
-Para jogar serão necessários dois Micro:bits. Um Micro:bit é usado como o tesouro a ser encontrado enquanto o segundo Micro:bit é utilizado guia para indicar se o tesouro está longe ou perto.
+Para jogar serão necessários dois Micro:bits. Um Micro:bit é usado como o tesouro a ser encontrado enquanto o segundo Micro:bit é utilizado como guia para indicar se o tesouro está longe ou perto.
+
+
 
 O jogo **Caça ao Tesouro** (CT) é composto por dois módulos separados. O primeiro módulo (chamado de **Caça**) é usado no Micro:bit que será usado para procurar o "tesouro". O segundo módulo (chamado de **Tesouro**) é usado em cada Micro:bit que será escondigo.
 
