@@ -2,8 +2,9 @@
   <variables>
     <variable type="" id="?Wc~pM;,n{l7FHv(sO_p">receivedNumber</variable>
     <variable type="" id="Zam7X_AiDtcL+CCr_XsZ">signal</variable>
+    <variable type="" id="c|8pclUqN?RiGIqR%Kcn">intensidade</variable>
   </variables>
-  <block type="pxt-on-start" x="20" y="20">
+  <block type="pxt-on-start" x="0" y="0">
     <statement name="HANDLER">
       <block type="radio_set_group">
         <value name="ID">
@@ -14,11 +15,11 @@
       </block>
     </statement>
   </block>
-  <block type="radio_on_number" x="21" y="181">
+  <block type="radio_on_number" x="1" y="161">
     <field name="HANDLER_receivedNumber" id="?Wc~pM;,n{l7FHv(sO_p" variabletype="">receivedNumber</field>
     <statement name="HANDLER">
       <block type="variables_set">
-        <field name="VAR" id="Zam7X_AiDtcL+CCr_XsZ" variabletype="">signal</field>
+        <field name="VAR" id="c|8pclUqN?RiGIqR%Kcn" variabletype="">intensidade</field>
         <value name="VALUE">
           <shadow type="math_number">
             <field name="NUM">0</field>
@@ -45,7 +46,7 @@
                     <field name="NUM">0</field>
                   </shadow>
                   <block type="variables_get">
-                    <field name="VAR" id="Zam7X_AiDtcL+CCr_XsZ" variabletype="">signal</field>
+                    <field name="VAR" id="c|8pclUqN?RiGIqR%Kcn" variabletype="">intensidade</field>
                   </block>
                 </value>
                 <value name="B">
@@ -75,7 +76,7 @@
                     <field name="NUM">0</field>
                   </shadow>
                   <block type="variables_get">
-                    <field name="VAR" id="Zam7X_AiDtcL+CCr_XsZ" variabletype="">signal</field>
+                    <field name="VAR" id="c|8pclUqN?RiGIqR%Kcn" variabletype="">intensidade</field>
                   </block>
                 </value>
                 <value name="B">
@@ -98,21 +99,8 @@
               </block>
             </statement>
             <value name="IF2">
-              <block type="logic_compare">
-                <field name="OP">LT</field>
-                <value name="A">
-                  <shadow type="math_number" id="{B^.S,Do4[:7j)DCQp^U">
-                    <field name="NUM">0</field>
-                  </shadow>
-                  <block type="variables_get">
-                    <field name="VAR" id="Zam7X_AiDtcL+CCr_XsZ" variabletype="">signal</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <shadow type="math_number">
-                    <field name="NUM">-80</field>
-                  </shadow>
-                </value>
+              <block type="variables_get">
+                <field name="VAR" id="c|8pclUqN?RiGIqR%Kcn" variabletype="">intensidade</field>
               </block>
             </value>
             <statement name="DO2">
@@ -135,7 +123,7 @@
                     <field name="NUM">0</field>
                   </shadow>
                   <block type="variables_get">
-                    <field name="VAR" id="Zam7X_AiDtcL+CCr_XsZ" variabletype="">signal</field>
+                    <field name="VAR" id="c|8pclUqN?RiGIqR%Kcn" variabletype="">intensidade</field>
                   </block>
                 </value>
                 <value name="B">
@@ -165,7 +153,7 @@
                     <field name="NUM">0</field>
                   </shadow>
                   <block type="variables_get">
-                    <field name="VAR" id="Zam7X_AiDtcL+CCr_XsZ" variabletype="">signal</field>
+                    <field name="VAR" id="c|8pclUqN?RiGIqR%Kcn" variabletype="">intensidade</field>
                   </block>
                 </value>
                 <value name="B">
@@ -196,5 +184,21 @@
         </next>
       </block>
     </statement>
+  </block>
+  <block type="logic_compare" disabled="true" x="103" y="807">
+    <field name="OP">LT</field>
+    <value name="A">
+      <shadow type="math_number" id="{B^.S,Do4[:7j)DCQp^U">
+        <field name="NUM">0</field>
+      </shadow>
+      <block type="variables_get">
+        <field name="VAR" id="c|8pclUqN?RiGIqR%Kcn" variabletype="">intensidade</field>
+      </block>
+    </value>
+    <value name="B">
+      <shadow type="math_number">
+        <field name="NUM">-80</field>
+      </shadow>
+    </value>
   </block>
 </xml>

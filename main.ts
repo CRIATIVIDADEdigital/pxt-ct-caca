@@ -1,7 +1,7 @@
-let signal = 0
+let intensidade = 0
 radio.onReceivedNumber(function (receivedNumber) {
-    signal = radio.receivedPacket(RadioPacketProperty.SignalStrength)
-    if (signal < -100) {
+    intensidade = radio.receivedPacket(RadioPacketProperty.SignalStrength)
+    if (intensidade < -100) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -9,7 +9,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             . . . . .
             # # # # #
             `)
-    } else if (signal < -90) {
+    } else if (intensidade < -90) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -17,7 +17,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             # # # # #
             # # # # #
             `)
-    } else if (signal < -80) {
+    } else if (intensidade) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -25,7 +25,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             # # # # #
             # # # # #
             `)
-    } else if (signal < -70) {
+    } else if (intensidade < -70) {
         basic.showLeds(`
             . . . . .
             # # # # #
@@ -33,7 +33,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             # # # # #
             # # # # #
             `)
-    } else if (signal < -60) {
+    } else if (intensidade < -60) {
         basic.showLeds(`
             # # # # #
             # # # # #
