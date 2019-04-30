@@ -42,7 +42,7 @@ Ao pressionar o botão A do Micro:bit o texto "Mensagem A" é enviado para todos
 input.onButtonPressed(Button.A, function () {
     radio.sendString("Mensagem A")
     basic.showString("A")
-})}
+})
 ```
 
 Ao pressionar o botão B do Micro:bit o texto "Mensagem B" é enviado para todos os Micro:bits configurados no ```||radio:grupo do rádio (1)||```.
