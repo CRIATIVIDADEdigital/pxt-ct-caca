@@ -23,6 +23,7 @@ O programa começa definindo um grupo de rádio.
 ```blocks
 radio.setGroup(1)
 ```
+
 Todos os Micro:bits que participarão do jogo **Caça ao Tesouro** devem ser configurados para que a comunicação seja feita pelo ```||radio:definir grupo do rádio (1)||```. 
 
 Se você tiver grupos diferentes brincando na mesma sala, cada grupo deve usar um número de grupo diferente.
@@ -30,13 +31,14 @@ Se você tiver grupos diferentes brincando na mesma sala, cada grupo deve usar u
 Depois da inicialização acima, o programa monitora o sinal de rádio e verifica a sua intensidade. Quanto maior a intensidade do sinal, mais perto estamos do "tesouro".
 
 ```blocks
-intensidade = radio.receivedPacket(RadioPacketProperty.SignalStrength)
+radio.onReceivedNumber(function (receivedNumber) {
+    intensidade = radio.receivedPacket(RadioPacketProperty.SignalStrength)
+})
 ```
 
 Ao pressionar o botão A do Micro:bit o texto "Mensagem A" é enviado para todos os Micro:bits configurados no ```||radio:grupo de rádio (1)||```.
 
 ```blocks
-radio.onReceivedNumber(function (receivedNumber) {
 input.onButtonPressed(Button.A, function () {
     radio.sendString("Mensagem A")
     basic.showString("A")
